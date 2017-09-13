@@ -1,0 +1,45 @@
+{
+   "name": "Egghead.io Keyboard Shortcuts",
+   "description": "Add keyboard shortcuts to pause, play, forward, backward, next and previous videos on Egghead.io",
+   "version": "0.1",
+   "manifest_version": 2,
+   "icons": {
+      "128": "icon.png"
+   },
+   "browser_action": {
+    "default_title": "Egghead.io Shortcuts",
+    "default_popup": "popup/popup.html",
+    "default_icon": "icon.png"
+  },
+   "incognito": "split",
+   "background": {
+      "persistent": false,
+      "scripts": [ "background.js" ]
+   },
+   "commands": {
+      "play-pause": {
+         "description": "Play/pause",
+         "global": true,
+         "suggested_key": "Ctrl+Shift+7"
+      },
+      "previous": {
+         "description": "Previous track"
+      },
+      "next": {
+         "description": "Next track",
+         "global": true,
+         "suggested_key": "Ctrl+Shift+0"
+     },
+     "back-ten": {
+        "description": "Back Ten Seconds",
+        "global": true,
+        "suggested_key": "Ctrl+Shift+8"
+     },
+     "forward-twenty-five": {
+        "description": "Forward Twenty Five Seconds",
+        "global": true,
+        "suggested_key": "Ctrl+Shift+9"
+     }
+   },
+   "permissions": [ "https://egghead.io/*"]
+}
