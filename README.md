@@ -1,7 +1,7 @@
 # Egghead.io-Keyboard-Shortcuts
 Add keyboard shortcuts to pause, play, forward, backward, next and previous videos on Egghead.io
 
-####Shortcut Defaults are set to:
+#### Shortcut Defaults are set to:
 
 * Pause/Play: Ctrl/Cmd + Shift + 7
 * Back Ten Seconds: Ctrl/Cmd + Shift + 8
