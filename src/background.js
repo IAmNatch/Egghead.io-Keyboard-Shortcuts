@@ -1,12 +1,12 @@
 function onCommand(command) {
     chrome.tabs.query({url: 'https://egghead.io/*'}, function(tabs) {
 
-        // Open a spotify tab if one does not exist yet.
+        // Open an Egghead.io tab if one does not exist yet.
         if (tabs.length === 0) {
             chrome.tabs.create({url: 'https://egghead.io/'});
         }
 
-        // Apply command on all spotify tabs.
+        // Apply command on all Egghead.io tabs.
         for (var tab of tabs) {
             var code = '';
             if (tab.url.startsWith('https://egghead.io')) {
